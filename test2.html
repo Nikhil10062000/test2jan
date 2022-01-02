@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PRO KABADDI</title>
+    </head>
+    <body style="background-color: rgba(255, 5, 5, 0.993);">
+        <form >
+            <h1  style="color: rgb(10, 250, 22 ) ;">Pro Kabaddi Season 2 Form:</h1>
+            <br>
+                <input type="text" placeholder="Full Name" id="name" name="name" minlength="3"required/>
+                <br></br>
+                <input type="date" placeholder="Date of birth" id="dob" name="dob" required/>
+                <br></br>
+                <input type="email" placeholder="email address" id="email" name="email"required/>
+                <br></br>
+                <input type="number" placeholder="age" id="age" name="age"/>
+                <hr/>
+                <h3>Player Profile:</h3>
+
+                <input type="radio" id="skill" name="player" value="raider"/>
+                <label for="raider">Raider</label>
+                <br></br>
+                <input type="radio" id="skill" name="player" value="defender"/>
+                <label for="defender">Defender</label>
+                <br></br>
+                <input type="radio" id="skill" name="player" value="all-rounder"/>
+                <label for="all-rounder">All-rounder</label>
+                
+                <hr/>
+    
+                <h3>Submit form:</h3>
+                <input type="checkbox" name="Submit" id="submitform" value="submit form" required/>
+                <label for="submit">Accept the form</label>
+                <br></br>
+                <button type="button"  id="myButton">Submit</button>
+                
+        </form>
+
+    </body>
+    <script>
+        document.getElementById("myButton").onclick = function(){
+    var name = document.getElementById("name").value;
+    console.log("Name: "+name);
+    var dateofbirth = document.getElementById("dob").value;
+    console.log("Date of Birth: "+dateofbirth);
+    var email = document.getElementById("email").value;
+    console.log("Email: "+email);
+    var age = document.getElementById("age").value;
+    console.log("age: "+age);
+        }
+    </script>
+</html>
